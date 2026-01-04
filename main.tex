@@ -1,0 +1,53 @@
+\documentclass[a4paper]{ltjsarticle}
+
+\usepackage[citestyle=numeric,url=true,doi=true,hyperref=true,bibstyle=ieee]{biblatex}
+\usepackage[hidelinks,unicode,pdfusetitle]{hyperref}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{cleveref}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{upgreek}
+\usepackage{ascmac}
+\usepackage{here}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{subfiles}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\footnotesize,
+  showstringspaces=false,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue},
+  stringstyle=\color{red}
+}
+
+\crefname{equation}{式}{式}
+\crefname{figure}{図}{図}
+\crefname{table}{表}{表}
+\crefformat{lstlisting}{{プログラム}#2#1#3}
+\renewcommand{\lstlistingname}{プログラム}
+
+\addbibresource{ref.bib}
+
+\input{title.tex}
+
+\begin{document}
+
+\maketitle
+
+\section{Section}
+
+\subfile{contents/content.tex}
+
+\printbibliography
+
+\end{document}

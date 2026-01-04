@@ -1,0 +1,52 @@
+{
+    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.invert": 0,
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+    "latex-workshop.latex.rootFile.useSubFile": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-r",
+                "%WORKSPACE_FOLDER%/.latexmkrc",
+                "-synctex=1",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "hediet.vscode-drawio.theme": "kennedy",
+    "hediet.vscode-drawio.appearance": "light",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.aux": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.bcf": true,
+        "**/*.out": true,
+        "**/*.run.xml": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.synctex.gz": true,
+    },
+    "latex-graphics-helper.execPath.drawio": "/Applications/draw.io.app/Contents/MacOS/draw.io",
+    "latex-graphics-helper.outputPath.clipboardImage": "${fileDirname}/clip/${dateNow}",
+}

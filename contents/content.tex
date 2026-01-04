@@ -1,0 +1,23 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+content
+
+\cref{fig:Page-1}
+\cref{program:fuga}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/fig/Page-1.pdf}
+    \caption{Page-1}\label{fig:Page-1}
+\end{figure}
+
+\begin{lstlisting}[language=C, caption=hoge,label=program:fuga]
+#include<stdio.h>
+int main(){
+   printf("Hello world!");
+}
+\end{lstlisting}
+
+\end{document}
